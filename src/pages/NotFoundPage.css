@@ -1,0 +1,29 @@
+.not-found {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.not-found__inner {
+  text-align: center;
+}
+
+.not-found__code {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  background: linear-gradient(135deg, var(--sky), var(--lime));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.not-found__inner h1 {
+  margin-bottom: 0.75rem;
+}
+
+.not-found__inner p {
+  color: var(--ink-70);
+  margin-bottom: 1.5rem;
+}

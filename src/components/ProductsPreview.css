@@ -1,0 +1,9 @@
+.products-preview {
+  background: var(--paper-white);
+}
+
+.products-preview__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
