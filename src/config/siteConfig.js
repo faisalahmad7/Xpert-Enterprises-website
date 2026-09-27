@@ -4,6 +4,13 @@
 // component code.
 // -----------------------------------------------------------------
 
+import grainsImg from "../assets/gallery/cereal grains.webp"
+import spicesImg from "../assets/gallery/spices.webp"
+import pulsesImg from "../assets/gallery/pulses lentils.jpg"
+import oilsGheeImg from "../assets/gallery/oil ghee.jpg"
+import dryFruitsImg from "../assets/gallery/nuts2.jpg"
+import customImg from "../assets/gallery/custom.jpg"
+
 export const company = {
   name: "Xpert Enterprises",
   shortName: "Xpert Enterprises",
@@ -125,18 +132,13 @@ export const process = [
 // catalog, not the confirmed real one. Rename, delete, or add to this
 // list freely - every page on the site (grid + detail pages) is
 // generated from it, nothing else needs editing.
-//
-// `image` is a path under /public/images/products/ - see IMAGE_GUIDE.md
-// in the project root for exact search terms and free stock sources.
-// Until a file exists at that path, the card just shows its colour
-// wash background, so nothing breaks.
 // -----------------------------------------------------------------
 export const products = [
   {
     slug: "organic-grains-cereals",
     name: "Organic Grains & Cereals",
     tagline: "Rice, wheat, and millets grown to certified organic standard.",
-    image: "/images/products/organic-grains.jpg",
+    image: grainsImg,
     description:
       "We source certified-organic rice, wheat, and millets directly from grower cooperatives, with full traceability back to the farm and lab-tested batches before export.",
     highlights: [
@@ -149,7 +151,7 @@ export const products = [
     slug: "organic-spices-herbs",
     name: "Organic Spices & Herbs",
     tagline: "Whole and ground spices, sourced at origin.",
-    image: "/images/products/organic-spices.jpg",
+    image: spicesImg,
     description:
       "From turmeric and chilli to cardamom and pepper, we work with organic spice growers across India's key growing regions and handle cleaning, grading, and export packing in-house.",
     highlights: [
@@ -162,7 +164,7 @@ export const products = [
     slug: "organic-pulses-legumes",
     name: "Organic Pulses & Legumes",
     tagline: "Lentils, beans, and chickpeas for global kitchens.",
-    image: "/images/products/organic-pulses.jpg",
+    image: pulsesImg,
     description:
       "We supply a full range of organic pulses - toor, moong, chana, and more - sorted and cleaned to international food-safety standards before they leave India.",
     highlights: [
@@ -175,7 +177,7 @@ export const products = [
     slug: "organic-oils-ghee",
     name: "Organic Oils & Ghee",
     tagline: "Cold-pressed oils and traditionally made ghee.",
-    image: "/images/products/organic-oils.jpg",
+    image: oilsGheeImg,
     description:
       "Cold-pressed groundnut, mustard, and coconut oils, alongside traditionally churned ghee, sourced from certified organic processors and export-packed to prevent spoilage in transit.",
     highlights: [
@@ -188,7 +190,7 @@ export const products = [
     slug: "organic-dry-fruits",
     name: "Organic Dry Fruits & Nuts",
     tagline: "Almonds, cashews, and raisins, quality-graded.",
-    image: "/images/products/organic-dry-fruits.jpg",
+    image: dryFruitsImg,
     description:
       "We source and grade organic dry fruits and nuts for export, with quality checks at every stage from procurement to final packing.",
     highlights: [
@@ -201,7 +203,7 @@ export const products = [
     slug: "custom-sourcing",
     name: "Custom Sourcing Solutions",
     tagline: "Looking for something not listed here?",
-    image: "/images/products/custom-sourcing.jpg",
+    image: customImg,
     description:
       "If you need an organic product that isn't in our standard catalog, tell us your requirement - we'll explore sourcing options across our grower and processor network and come back with what's possible.",
     highlights: [

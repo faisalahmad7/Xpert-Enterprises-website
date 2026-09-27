@@ -137,6 +137,10 @@
     margin-top: 1rem;
   }
   .hero__watermark {
-    display: none;
+    width: 320px;
+    height: 320px;
+    top: 38%;
+    left: 50%;
+    opacity: 0.1;
   }
 }
