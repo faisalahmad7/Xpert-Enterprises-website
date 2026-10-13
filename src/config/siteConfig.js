@@ -10,6 +10,24 @@ import pulsesImg from "../assets/gallery/pulses lentils.jpg"
 import oilsGheeImg from "../assets/gallery/oil ghee.jpg"
 import dryFruitsImg from "../assets/gallery/nuts2.jpg"
 import customImg from "../assets/gallery/custom.jpg"
+import pulsesWideImg from "../assets/gallery/pulses-optimized.jpg"
+
+// Photos used for the decorative blocks on the homepage (hero cards,
+// buyer/seller cards, About collage). Swap any of these for your own.
+export const heroImages = {
+  primary: spicesImg,
+  secondary: dryFruitsImg,
+}
+
+export const pathImages = {
+  buyer: pulsesImg,
+  seller: grainsImg,
+}
+
+export const aboutImages = {
+  large: pulsesWideImg,
+  small: oilsGheeImg,
+}
 
 export const company = {
   name: "Xpert Enterprises",

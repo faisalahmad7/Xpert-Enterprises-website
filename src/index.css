@@ -1,27 +1,34 @@
 :root {
   --navy: #0f2f52;
   --navy-deep: #081d33;
+  --navy-950: #05142a;
   --sky: #1a8fd1;
   --sky-light: #e8f4fb;
   --lime: #7cb342;
   --lime-deep: #5a8f2e;
   --gold: #d4a017;
+  --gold-soft: #f0c75e;
   --gold-light: #fbf0d9;
+  --gold-grad: linear-gradient(135deg, #f6d57a 0%, #e0aa24 55%, #c98f0c 100%);
   --teal: #0e7c7b;
   --ink: var(--navy);
   --ink-70: rgba(15, 47, 82, 0.72);
   --ink-45: rgba(15, 47, 82, 0.48);
-  --paper: #f6f9fc;
+  --paper: #f5f8fc;
   --paper-white: #ffffff;
   --rule: rgba(15, 47, 82, 0.1);
   --rule-on-dark: rgba(255, 255, 255, 0.14);
   --font-display: "Jost", "Poppins", "Segoe UI", sans-serif;
   --font-body: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --container: 1180px;
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --container: 1200px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
-  --radius-sm: 8px;
-  --radius-md: 16px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
   --radius-lg: 28px;
+  --shadow-soft: 0 12px 32px rgba(8, 29, 51, 0.08);
+  --shadow-lift: 0 26px 56px rgba(8, 29, 51, 0.18);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 * {
@@ -39,6 +46,7 @@ body {
   color: var(--ink);
   background: var(--paper-white);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img,
@@ -85,51 +93,97 @@ ol {
 }
 
 .section {
-  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  padding: clamp(4rem, 9vw, 6.5rem) 0;
 }
 
 .section--alt {
   background: var(--paper);
 }
 
+.section--dark {
+  position: relative;
+  background: linear-gradient(180deg, var(--navy-950) 0%, var(--navy-deep) 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.dot-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.11) 1px, transparent 1.4px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000 0%, transparent 72%);
+  mask-image: radial-gradient(ellipse at 70% 30%, #000 0%, transparent 72%);
+  pointer-events: none;
+}
+
 .section-eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.6rem;
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--gold);
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.9rem;
 }
 
 .section-eyebrow::before {
   content: "";
-  width: 26px;
+  width: 30px;
   height: 2px;
-  background: linear-gradient(90deg, var(--sky), var(--gold));
+  background: var(--gold-grad);
   display: inline-block;
   border-radius: 2px;
 }
 
+.section--dark .section-eyebrow {
+  color: var(--gold-soft);
+}
+
 .section-heading {
-  font-size: clamp(1.85rem, 3.2vw, 2.6rem);
-  max-width: 34ch;
+  font-size: clamp(1.95rem, 3.6vw, 2.9rem);
+  max-width: 24ch;
   color: var(--navy);
+  letter-spacing: -0.01em;
+}
+
+.section--dark .section-heading {
+  color: #fff;
+}
+
+.accent-serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.accent-gold {
+  background: var(--gold-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .section-lede {
   max-width: 62ch;
   color: var(--ink-70);
-  font-size: 1.05rem;
+  font-size: 1.06rem;
   margin-top: 1rem;
 }
 
+.section--dark .section-lede {
+  color: rgba(255, 255, 255, 0.72);
+}
+
 .section-head {
-  max-width: 680px;
-  margin: 0 auto 2.75rem;
+  max-width: 720px;
+  margin: 0 auto 3.25rem;
   text-align: center;
 }
 
@@ -146,21 +200,29 @@ ol {
   margin-right: auto;
 }
 
-/* Buttons - full pill shape, distinct from Areeba's squared-off buttons */
+/* Buttons - full pill shape */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.9rem 1.8rem;
+  gap: 0.55rem;
+  padding: 0.95rem 1.9rem;
   font-size: 0.97rem;
   font-weight: 600;
   border-radius: 999px;
   border: 1.5px solid transparent;
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.15s ease,
-    color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
+}
+
+.btn svg {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
 }
 
 .btn-primary {
@@ -170,7 +232,7 @@ ol {
 .btn-primary:hover {
   background: var(--sky);
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(18, 58, 99, 0.22);
+  box-shadow: 0 12px 26px rgba(18, 58, 99, 0.25);
 }
 
 .btn-accent {
@@ -181,6 +243,17 @@ ol {
   background: var(--gold);
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(212, 160, 23, 0.35);
+}
+
+.btn-gold {
+  background: var(--gold-grad);
+  color: var(--navy-950);
+  box-shadow: 0 10px 26px rgba(212, 160, 23, 0.32);
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(212, 160, 23, 0.5);
+  filter: brightness(1.05);
 }
 
 .btn-outline {
@@ -195,7 +268,7 @@ ol {
 
 .btn-outline-light {
   background: transparent;
-  border-color: var(--rule-on-dark);
+  border-color: rgba(255, 255, 255, 0.4);
   color: #fff;
 }
 .btn-outline-light:hover {
@@ -205,12 +278,29 @@ ol {
 
 .pill-tag {
   display: inline-flex;
-  padding: 0.3rem 0.85rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 600;
   background: var(--gold-light);
-  color: var(--gold);
+  color: #9a7208;
+}
+
+/* Circular arrow button used on image cards */
+.arrow-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--navy);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s var(--ease-out), background-color 0.25s ease, color 0.25s ease;
+  flex-shrink: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -231,24 +321,20 @@ ol {
 
 .reveal {
   opacity: 0;
-  transform: translateY(40px) scale(0.96);
+  transform: translateY(28px);
 }
 
 .reveal--visible {
-  animation: reveal-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: reveal-in 0.9s var(--ease-out) forwards;
 }
 
 @keyframes reveal-in {
   0% {
     opacity: 0;
-    transform: translateY(40px) scale(0.96);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-6px) scale(1.01);
+    transform: translateY(28px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }

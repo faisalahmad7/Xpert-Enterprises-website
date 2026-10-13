@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 88px;
+  height: 84px;
 }
 
 .navbar__logo {
@@ -32,6 +32,21 @@
   width: 40px;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+.navbar__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.navbar__logo-sub {
+  margin-top: 0.2rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
 .navbar__logo-name {
@@ -73,7 +88,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -26px;
+  bottom: -24px;
   height: 3px;
   border-radius: 3px;
   background: linear-gradient(90deg, var(--sky), var(--lime));
@@ -146,7 +161,7 @@
 
   .navbar__links {
     position: absolute;
-    top: 88px;
+    top: 84px;
     left: 0;
     right: 0;
     background: var(--paper-white);

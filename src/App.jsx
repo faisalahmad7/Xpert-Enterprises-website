@@ -1,4 +1,5 @@
 import { RouterProvider, useRouter, matchPath } from "./router.jsx"
+import Topbar from "./components/Topbar.jsx"
 import Navbar from "./components/Navbar.jsx"
 import Footer from "./components/Footer.jsx"
 import WhatsAppButton from "./components/WhatsAppButton.jsx"
@@ -33,6 +34,7 @@ function CurrentPage() {
 function AppShell() {
   return (
     <>
+      <Topbar />
       <Navbar />
       <main>
         <CurrentPage />
