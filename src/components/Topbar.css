@@ -1,0 +1,52 @@
+.topbar {
+  background: var(--navy-950);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 42px;
+}
+
+.topbar__group {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.topbar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.topbar__item svg {
+  color: var(--gold-soft);
+  flex-shrink: 0;
+}
+
+.topbar__link {
+  transition: color 0.15s ease;
+}
+
+.topbar__link:hover {
+  color: #fff;
+}
+
+@media (max-width: 1060px) {
+  .topbar__item--hours {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .topbar {
+    display: none;
+  }
+}

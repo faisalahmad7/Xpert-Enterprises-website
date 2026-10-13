@@ -1,40 +1,89 @@
 .trust-strip {
-  background: var(--paper-white);
-  padding: 1.6rem 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  position: relative;
+  z-index: 3;
+  margin-top: -5.2rem;
 }
 
-.trust-strip__inner {
+.trust-strip__card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  background: var(--paper-white);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 70px rgba(5, 20, 42, 0.22), 0 0 0 1px rgba(15, 47, 82, 0.05);
+  overflow: hidden;
 }
 
 .trust-strip__item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 0.25rem;
-  padding: 0 0.5rem;
+  gap: 1rem;
+  padding: 1.9rem 1.6rem;
+  position: relative;
+}
+
+.trust-strip__item + .trust-strip__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22%;
+  bottom: 22%;
+  width: 1px;
+  background: var(--rule);
+}
+
+.trust-strip__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--sky-light), #ffffff);
+  border: 1px solid rgba(26, 143, 209, 0.18);
+  color: var(--sky);
+}
+
+.trust-strip__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 .trust-strip__value {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
   font-weight: 600;
+  line-height: 1.1;
   color: var(--navy);
 }
 
 .trust-strip__label {
-  font-size: 0.82rem;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
   color: var(--ink-45);
 }
 
-@media (max-width: 700px) {
-  .trust-strip__inner {
+@media (max-width: 900px) {
+  .trust-strip {
+    margin-top: -4.2rem;
+  }
+  .trust-strip__card {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 1.3rem;
+  }
+  .trust-strip__item {
+    padding: 1.4rem 1.2rem;
+  }
+  .trust-strip__item:nth-child(3)::before {
+    display: none;
+  }
+  .trust-strip__item:nth-child(n + 3) {
+    border-top: 1px solid var(--rule);
+  }
+}
+
+@media (max-width: 420px) {
+  .trust-strip__icon {
+    display: none;
   }
 }

@@ -18,3 +18,24 @@
 .whatsapp-fab:hover {
   transform: translateY(-2px) scale(1.05);
 }
+
+.whatsapp-fab::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid #25d366;
+  animation: fab-pulse 2.6s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes fab-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}

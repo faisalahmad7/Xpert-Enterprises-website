@@ -10,6 +10,24 @@ import pulsesImg from "../assets/gallery/pulses lentils.jpg"
 import oilsGheeImg from "../assets/gallery/oil ghee.jpg"
 import dryFruitsImg from "../assets/gallery/nuts2.jpg"
 import customImg from "../assets/gallery/custom.jpg"
+import pulsesWideImg from "../assets/gallery/pulses-optimized.jpg"
+
+// Photos used for the decorative blocks on the homepage (hero cards,
+// buyer/seller cards, About collage). Swap any of these for your own.
+export const heroImages = {
+  primary: spicesImg,
+  secondary: dryFruitsImg,
+}
+
+export const pathImages = {
+  buyer: pulsesImg,
+  seller: grainsImg,
+}
+
+export const aboutImages = {
+  large: pulsesWideImg,
+  small: oilsGheeImg,
+}
 
 export const company = {
   name: "Xpert Enterprises",
@@ -54,12 +72,15 @@ export const navLinks = [
   { label: "Contact", to: "/contact" },
 ]
 
-// PLACEHOLDER - replace with your real, verifiable numbers before launch.
+// Facts that are true of the business as described on this site. When you have
+// real figures you can verify (years trading, shipments handled, countries),
+// add them here - the numbers count up on scroll. Keep the 4 icons in
+// components/TrustStrip.jsx in the same order.
 export const trustStats = [
-  { value: "12+", label: "Years Trading" },
-  { value: "10+", label: "Countries Served" },
-  { value: "400+", label: "Shipments Handled" },
-  { value: "98%", label: "On-Time Delivery" },
+  { value: "6", label: "Product Categories" },
+  { value: "1", label: "Point of Contact" },
+  { value: "5", label: "Steps to Delivery" },
+  { value: "Pune", label: "Head Office, India" },
 ]
 
 export const about = {
@@ -214,7 +235,8 @@ export const products = [
   },
 ]
 
-// PLACEHOLDER - replace with real client names and quotes before launch.
+// NOT SHOWN ON THE SITE until you add real quotes. To bring the section back, put
+// real client names and quotes here, then add <Testimonials /> to pages/HomePage.jsx.
 export const testimonials = [
   {
     quote: "Xpert Enterprises cleared our first import shipment in days, not weeks. We didn't have to chase them once.",

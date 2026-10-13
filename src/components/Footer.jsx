@@ -1,5 +1,6 @@
 import { Link } from "../router.jsx"
-import { company, contact, navLinks, whatsappLink } from "../config/siteConfig.js"
+import { company, contact, navLinks, products, whatsappLink } from "../config/siteConfig.js"
+import { Mail, MapPin, Phone, WhatsApp } from "./icons.jsx"
 import "./Footer.css"
 
 export default function Footer() {
@@ -14,7 +15,10 @@ export default function Footer() {
             <span className="footer__logo">{company.shortName}</span>
           </div>
           <p className="footer__tagline">{company.tagline}</p>
-    
+          <p className="footer__blurb">
+            Certified organic products, sourced, shipped, and cleared through customs by one team
+            in Pune, India.
+          </p>
         </div>
 
         <nav className="footer__nav">
@@ -28,13 +32,34 @@ export default function Footer() {
           </ul>
         </nav>
 
+        <nav className="footer__nav">
+          <h4>Products</h4>
+          <ul>
+            {products.map((product) => (
+              <li key={product.slug}>
+                <Link to={`/products/${product.slug}`}>{product.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         <div className="footer__contact">
           <h4>Reach Us</h4>
-          <p>{contact.addressSingleLine}</p>
-          <a className="bold" href={`tel:${contact.phoneDial}`}>{contact.phoneDisplay}</a>
-          <a className="bold" href={`mailto:${contact.email}`}>{contact.email}</a>
-          <a className="bold" href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            WhatsApp
+          <p className="footer__row">
+            <MapPin width={18} height={18} />
+            <span>{contact.addressSingleLine}</span>
+          </p>
+          <a className="footer__row bold" href={`tel:${contact.phoneDial}`}>
+            <Phone width={18} height={18} />
+            <span>{contact.phoneDisplay}</span>
+          </a>
+          <a className="footer__row bold" href={`mailto:${contact.email}`}>
+            <Mail width={18} height={18} />
+            <span>{contact.email}</span>
+          </a>
+          <a className="footer__row bold" href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <WhatsApp width={18} height={18} />
+            <span>WhatsApp</span>
           </a>
         </div>
       </div>
