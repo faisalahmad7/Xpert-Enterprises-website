@@ -14,7 +14,7 @@ export default function Reveal({ children, className = "", delay = 0, as: Tag = 
           observer.unobserve(el)
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.12 }
     )
     observer.observe(el)
     return () => observer.disconnect()
@@ -24,7 +24,7 @@ export default function Reveal({ children, className = "", delay = 0, as: Tag = 
     <Tag
       ref={ref}
       className={`reveal ${visible ? "reveal--visible" : ""} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
+      style={{ animationDelay: `${delay}ms` }}
     >
       {children}
     </Tag>

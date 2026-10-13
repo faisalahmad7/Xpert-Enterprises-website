@@ -1,8 +1,82 @@
 .about__inner {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: clamp(2rem, 5vw, 4rem);
-  align-items: start;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.about__media {
+  position: relative;
+  padding: 0 0 3rem 0;
+}
+
+.about__photo {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lift);
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__photo--large {
+  width: 82%;
+  aspect-ratio: 4 / 4.6;
+}
+
+.about__photo--small {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 52%;
+  aspect-ratio: 1 / 1;
+  border: 8px solid var(--paper-white);
+  border-radius: 30px;
+}
+
+.section--alt .about__photo--small {
+  border-color: var(--paper);
+}
+
+.about__badge {
+  position: absolute;
+  left: -0.8rem;
+  bottom: 4.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1.15rem 0.8rem 0.85rem;
+  border-radius: 18px;
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 20px 44px rgba(5, 20, 42, 0.35);
+}
+
+.about__badge img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.about__badge strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.about__badge small {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
 }
 
 .about__paragraph {
@@ -14,32 +88,43 @@
 .about__points {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
-  background: var(--paper-white);
-  border-radius: var(--radius-md);
-  padding: 1.8rem;
-  box-shadow: 0 10px 30px rgba(18, 58, 99, 0.06);
+  gap: 0.95rem;
+  margin-top: 1.8rem;
 }
 
 .about__point {
   display: flex;
   align-items: flex-start;
-  gap: 0.8rem;
+  gap: 0.85rem;
   font-size: 0.98rem;
+  font-weight: 500;
   color: var(--ink);
 }
 
 .about__point-mark {
   flex: none;
-  width: 9px;
-  height: 9px;
-  margin-top: 0.45rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 0.1rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--sky), var(--lime));
+  background: var(--lime);
+  color: #fff;
+}
+
+.about__cta {
+  margin-top: 2.2rem;
 }
 
 @media (max-width: 880px) {
   .about__inner {
     grid-template-columns: 1fr;
+  }
+  .about__media {
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
