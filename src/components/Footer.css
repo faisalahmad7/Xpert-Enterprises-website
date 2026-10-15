@@ -13,7 +13,7 @@
   right: 0;
   top: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--sky), var(--lime), var(--gold));
+  background: linear-gradient(90deg, var(--blue), var(--red));
 }
 
 .footer .footer__inner {
@@ -51,7 +51,7 @@
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.15rem;
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 .footer__blurb {
@@ -83,7 +83,7 @@
 }
 
 .footer__nav a:hover {
-  color: var(--gold-soft);
+  color: var(--red-soft);
   padding-left: 4px;
 }
 
@@ -104,11 +104,11 @@
 .footer__row svg {
   flex-shrink: 0;
   margin-top: 0.15rem;
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 a.footer__row:hover {
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 .footer .footer__bottom {

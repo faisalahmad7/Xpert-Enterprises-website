@@ -2,7 +2,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: radial-gradient(ellipse 70% 120% at 85% 20%, #15497f 0%, #0b2848 50%, #05142a 100%);
+  background: radial-gradient(ellipse 70% 120% at 85% 20%, #1d4b95 0%, #0e2a5a 50%, #071634 100%);
   color: #fff;
   padding: clamp(3.75rem, 8vw, 5.75rem) 0;
 }
@@ -22,11 +22,11 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(5, 20, 42, 0.95) 0%, rgba(5, 20, 42, 0.6) 45%, rgba(5, 20, 42, 0) 80%);
+  background: linear-gradient(90deg, rgba(7, 22, 52, 0.95) 0%, rgba(7, 22, 52, 0.6) 45%, rgba(7, 22, 52, 0) 80%);
 }
 
 .cta-banner .section-eyebrow {
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 .cta-banner__inner {

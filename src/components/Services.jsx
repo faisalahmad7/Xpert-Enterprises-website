@@ -10,7 +10,7 @@ export default function Services() {
         <Reveal as="div" className="section-head">
           <p className="section-eyebrow">What We Handle</p>
           <h2 className="section-heading">
-            Six services, <span className="accent-serif accent-gold">one shipment file</span> from start to finish.
+            Six services, <span className="accent-serif accent-red">one shipment file</span> from start to finish.
           </h2>
         </Reveal>
 

@@ -26,12 +26,12 @@
 
 .worldmap__travel {
   fill: none;
-  stroke: #f6d57a;
+  stroke: #ff6a64;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-dasharray: 0.14 1.4;
   stroke-dashoffset: 0.14;
-  filter: drop-shadow(0 0 4px rgba(246, 213, 122, 0.9));
+  filter: drop-shadow(0 0 4px rgba(255, 106, 100, 0.9));
   animation: wm-travel 5.4s linear infinite;
 }
 
@@ -45,14 +45,14 @@
 }
 
 .worldmap__dest {
-  fill: #f6d57a;
-  filter: drop-shadow(0 0 3px rgba(246, 213, 122, 0.9));
+  fill: #ff6a64;
+  filter: drop-shadow(0 0 3px rgba(255, 106, 100, 0.9));
 }
 
 .worldmap__ring,
 .worldmap__origin-ring {
   fill: none;
-  stroke: #f6d57a;
+  stroke: #ff6a64;
   stroke-width: 1;
   transform-box: fill-box;
   transform-origin: center;
@@ -93,7 +93,7 @@
   gap: 1px;
   padding: 0.45rem 0.8rem;
   border-radius: 12px;
-  background: rgba(8, 29, 51, 0.72);
+  background: rgba(13, 38, 80, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -111,7 +111,7 @@
 
 .worldmap__pin small {
   font-size: 0.68rem;
-  color: var(--gold-soft);
+  color: var(--red-soft);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }

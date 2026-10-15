@@ -22,11 +22,13 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo">
-          <img src="/images/logo-mark.png" alt="" className="navbar__logo-mark" aria-hidden="true" />
-          <span className="navbar__logo-text">
-            <span className="navbar__logo-name">{company.shortName}</span>
-            <span className="navbar__logo-sub">Import &amp; Export</span>
-          </span>
+          <img
+            src="/images/logo-full.png"
+            alt={`${company.shortName} - Import & Export`}
+            className="navbar__logo-img"
+            width="240"
+            height="46"
+          />
         </Link>
 
         <nav className={`navbar__links ${open ? "navbar__links--open" : ""}`}>

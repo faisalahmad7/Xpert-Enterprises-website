@@ -27,7 +27,7 @@
 }
 
 .topbar__item svg {
-  color: var(--gold-soft);
+  color: var(--red-soft);
   flex-shrink: 0;
 }
 

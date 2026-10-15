@@ -52,7 +52,7 @@
   border-radius: 18px;
   background: var(--navy);
   color: #fff;
-  box-shadow: 0 20px 44px rgba(5, 20, 42, 0.35);
+  box-shadow: 0 20px 44px rgba(7, 22, 52, 0.35);
 }
 
 .about__badge img {
@@ -76,7 +76,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 .about__paragraph {
@@ -110,7 +110,7 @@
   height: 24px;
   margin-top: 0.1rem;
   border-radius: 50%;
-  background: var(--lime);
+  background: var(--red);
   color: #fff;
 }
 

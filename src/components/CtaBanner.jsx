@@ -15,14 +15,14 @@ export default function CtaBanner() {
         <div>
           <p className="section-eyebrow">Let's Talk</p>
           <h2 className="cta-banner__heading">
-            Ready to move your next <span className="accent-serif accent-gold">shipment?</span>
+            Ready to move your next <span className="accent-serif accent-red">shipment?</span>
           </h2>
           <p className="cta-banner__text">
             Send us your requirement and we'll come back with a clear plan, route, and timeline.
           </p>
         </div>
         <div className="cta-banner__actions">
-          <Link to="/contact" className="btn btn-gold">
+          <Link to="/contact" className="btn btn-red">
             Request a Quote <ArrowRight width={18} height={18} />
           </Link>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline-light">
