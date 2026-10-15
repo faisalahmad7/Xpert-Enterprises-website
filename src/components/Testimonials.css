@@ -29,7 +29,7 @@
   font-size: 4.4rem;
   line-height: 0.7;
   height: 2rem;
-  background: var(--gold-grad);
+  background: var(--red-grad);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -62,7 +62,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--sky), var(--navy));
+  background: linear-gradient(135deg, var(--blue), var(--navy));
   color: #fff;
   font-family: var(--font-display);
   font-weight: 600;

@@ -1,22 +1,21 @@
 :root {
-  --navy: #0f2f52;
-  --navy-deep: #081d33;
-  --navy-950: #05142a;
-  --sky: #1a8fd1;
-  --sky-light: #e8f4fb;
-  --lime: #7cb342;
-  --lime-deep: #5a8f2e;
-  --gold: #d4a017;
-  --gold-soft: #f0c75e;
-  --gold-light: #fbf0d9;
-  --gold-grad: linear-gradient(135deg, #f6d57a 0%, #e0aa24 55%, #c98f0c 100%);
-  --teal: #0e7c7b;
+  --navy: #1a458a;
+  --navy-deep: #0d2650;
+  --navy-950: #071634;
+  --blue: #3972db;
+  --blue-light: #e9f0fc;
+  --red: #e5171f;
+  --red-deep: #bf1019;
+  --red-soft: #ff6a64;
+  --red-light: #fdecec;
+  --red-grad: linear-gradient(135deg, #f0343a 0%, #e5171f 55%, #bf1019 100%);
+  --red-text-grad: linear-gradient(135deg, #ff8f88 0%, #ff5c56 55%, #f2403f 100%);
   --ink: var(--navy);
-  --ink-70: rgba(15, 47, 82, 0.72);
-  --ink-45: rgba(15, 47, 82, 0.48);
-  --paper: #f5f8fc;
+  --ink-70: rgba(26, 69, 138, 0.76);
+  --ink-45: rgba(26, 69, 138, 0.52);
+  --paper: #f4f7fc;
   --paper-white: #ffffff;
-  --rule: rgba(15, 47, 82, 0.1);
+  --rule: rgba(26, 69, 138, 0.12);
   --rule-on-dark: rgba(255, 255, 255, 0.14);
   --font-display: "Jost", "Poppins", "Segoe UI", sans-serif;
   --font-body: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -26,8 +25,8 @@
   --radius-sm: 10px;
   --radius-md: 18px;
   --radius-lg: 28px;
-  --shadow-soft: 0 12px 32px rgba(8, 29, 51, 0.08);
-  --shadow-lift: 0 26px 56px rgba(8, 29, 51, 0.18);
+  --shadow-soft: 0 12px 32px rgba(13, 38, 80, 0.08);
+  --shadow-lift: 0 26px 56px rgba(13, 38, 80, 0.18);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -127,7 +126,7 @@ ol {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   font-size: 0.78rem;
-  color: var(--gold);
+  color: var(--red);
   margin-bottom: 0.9rem;
 }
 
@@ -135,13 +134,13 @@ ol {
   content: "";
   width: 30px;
   height: 2px;
-  background: var(--gold-grad);
+  background: var(--red-grad);
   display: inline-block;
   border-radius: 2px;
 }
 
 .section--dark .section-eyebrow {
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 .section-heading {
@@ -162,8 +161,8 @@ ol {
   letter-spacing: 0;
 }
 
-.accent-gold {
-  background: var(--gold-grad);
+.accent-red {
+  background: var(--red-text-grad);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -230,29 +229,29 @@ ol {
   color: #fff;
 }
 .btn-primary:hover {
-  background: var(--sky);
+  background: var(--blue);
   transform: translateY(-2px);
-  box-shadow: 0 12px 26px rgba(18, 58, 99, 0.25);
+  box-shadow: 0 12px 26px rgba(26, 69, 138, 0.25);
 }
 
 .btn-accent {
-  background: var(--lime);
-  color: var(--navy-deep);
+  background: var(--red);
+  color: #fff;
 }
 .btn-accent:hover {
-  background: var(--gold);
+  background: var(--red-deep);
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(212, 160, 23, 0.35);
+  box-shadow: 0 10px 24px rgba(229, 23, 31, 0.35);
 }
 
-.btn-gold {
-  background: var(--gold-grad);
-  color: var(--navy-950);
-  box-shadow: 0 10px 26px rgba(212, 160, 23, 0.32);
+.btn-red {
+  background: var(--red-grad);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(229, 23, 31, 0.32);
 }
-.btn-gold:hover {
+.btn-red:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(212, 160, 23, 0.5);
+  box-shadow: 0 16px 34px rgba(229, 23, 31, 0.5);
   filter: brightness(1.05);
 }
 
@@ -284,8 +283,8 @@ ol {
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 600;
-  background: var(--gold-light);
-  color: #9a7208;
+  background: var(--red-light);
+  color: #b3121a;
 }
 
 /* Circular arrow button used on image cards */
@@ -315,7 +314,7 @@ ol {
 }
 
 :focus-visible {
-  outline: 2px solid var(--sky);
+  outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
 

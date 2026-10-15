@@ -13,7 +13,7 @@
   left: 10%;
   right: 10%;
   height: 2px;
-  background: repeating-linear-gradient(90deg, rgba(26, 143, 209, 0.45) 0 8px, transparent 8px 16px);
+  background: repeating-linear-gradient(90deg, rgba(57, 114, 219, 0.45) 0 8px, transparent 8px 16px);
 }
 
 .process__item {
@@ -32,12 +32,12 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--gold-grad);
-  color: var(--navy-950);
+  background: var(--red-grad);
+  color: #fff;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.2rem;
-  box-shadow: 0 0 0 7px var(--paper), 0 10px 24px rgba(212, 160, 23, 0.4);
+  box-shadow: 0 0 0 7px var(--paper), 0 10px 24px rgba(229, 23, 31, 0.4);
 }
 
 .process__card {
@@ -67,7 +67,7 @@
   font-size: 3.6rem;
   font-weight: 600;
   line-height: 1;
-  color: rgba(15, 47, 82, 0.05);
+  color: rgba(26, 69, 138, 0.05);
   pointer-events: none;
 }
 

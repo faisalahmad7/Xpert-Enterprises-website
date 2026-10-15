@@ -67,9 +67,9 @@
   z-index: -1;
   background: linear-gradient(
     to top,
-    rgba(5, 20, 42, 0.92) 0%,
-    rgba(5, 20, 42, 0.5) 32%,
-    rgba(5, 20, 42, 0) 62%
+    rgba(7, 22, 52, 0.92) 0%,
+    rgba(7, 22, 52, 0.5) 32%,
+    rgba(7, 22, 52, 0) 62%
   );
 }
 
@@ -84,7 +84,7 @@
   color: #fff;
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  background: rgba(8, 29, 51, 0.55);
+  background: rgba(13, 38, 80, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -150,7 +150,7 @@
 }
 
 .products-grid__card:hover .products-grid__arrow {
-  background: var(--gold-soft);
+  background: var(--red-soft);
   color: var(--navy-950);
   transform: rotate(-45deg) scale(1.05);
 }

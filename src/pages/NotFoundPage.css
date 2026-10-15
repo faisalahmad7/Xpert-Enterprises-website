@@ -12,7 +12,7 @@
   display: block;
   font-family: var(--font-display);
   font-size: 4rem;
-  background: linear-gradient(135deg, var(--sky), var(--lime));
+  background: linear-gradient(135deg, var(--blue), var(--red));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

@@ -9,7 +9,7 @@
   grid-template-columns: repeat(4, 1fr);
   background: var(--paper-white);
   border-radius: var(--radius-lg);
-  box-shadow: 0 30px 70px rgba(5, 20, 42, 0.22), 0 0 0 1px rgba(15, 47, 82, 0.05);
+  box-shadow: 0 30px 70px rgba(7, 22, 52, 0.22), 0 0 0 1px rgba(26, 69, 138, 0.05);
   overflow: hidden;
 }
 
@@ -39,9 +39,9 @@
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: linear-gradient(135deg, var(--sky-light), #ffffff);
-  border: 1px solid rgba(26, 143, 209, 0.18);
-  color: var(--sky);
+  background: linear-gradient(135deg, var(--blue-light), #ffffff);
+  border: 1px solid rgba(57, 114, 219, 0.18);
+  color: var(--blue);
 }
 
 .trust-strip__text {

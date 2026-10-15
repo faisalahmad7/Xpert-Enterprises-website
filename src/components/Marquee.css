@@ -35,7 +35,7 @@
 .marquee__sep {
   width: 8px;
   height: 8px;
-  background: var(--gold-grad);
+  background: var(--red-grad);
   transform: rotate(45deg);
   flex-shrink: 0;
 }

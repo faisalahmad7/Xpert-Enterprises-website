@@ -95,3 +95,27 @@
     grid-template-columns: 1fr;
   }
 }
+
+.contact__main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.contact__card {
+  margin: 0;
+}
+
+.contact__card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact__card figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--ink-45);
+}

@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(18, 58, 99, 0.3);
+  box-shadow: 0 8px 24px rgba(26, 69, 138, 0.3);
   z-index: 60;
   transition: transform 0.15s ease;
 }

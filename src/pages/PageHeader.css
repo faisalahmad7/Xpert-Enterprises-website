@@ -2,7 +2,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: radial-gradient(ellipse 70% 130% at 85% 0%, #15497f 0%, #0b2848 48%, #05142a 100%);
+  background: radial-gradient(ellipse 70% 130% at 85% 0%, #1d4b95 0%, #0e2a5a 48%, #071634 100%);
   color: #fff;
   padding: clamp(3.5rem, 8vw, 5.5rem) 0 clamp(3rem, 7vw, 4.5rem);
 }
@@ -25,13 +25,13 @@
   right: 0;
   bottom: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--sky), var(--lime), var(--gold));
+  background: linear-gradient(90deg, var(--blue), var(--red));
 }
 
 .page-header .pill-tag {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--gold-soft);
+  color: var(--red-soft);
 }
 
 .page-header__title {

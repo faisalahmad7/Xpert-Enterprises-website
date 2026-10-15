@@ -54,6 +54,7 @@ const handleSubmit = async (e) => {
         </h2>
 
         <div className="contact__grid">
+          <div className="contact__main">
           <form className="contact__form" onSubmit={handleSubmit}>
             <div className="contact__field-row">
               <label className="contact__field">
@@ -125,6 +126,18 @@ const handleSubmit = async (e) => {
               </p>
             )}
           </form>
+
+          <figure className="contact__card">
+            <img
+              src="/images/business-card.jpg"
+              alt="Xpert Enterprises business card for Imran Shaikh, Proprietor, with phone, email, website and address"
+              width="1050"
+              height="600"
+              loading="lazy"
+            />
+            <figcaption>Imran Shaikh, Proprietor</figcaption>
+          </figure>
+          </div>
 
           <div className="contact__details">
             <div className="contact__detail-block">

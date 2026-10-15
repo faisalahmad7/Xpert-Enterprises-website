@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
 
           <div className="hero__actions">
-            <Link to="/contact" className="btn btn-gold">
+            <Link to="/contact" className="btn btn-red">
               Request a Quote <ArrowRight width={18} height={18} />
             </Link>
             <a

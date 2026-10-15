@@ -27,7 +27,7 @@ export default function Paths() {
                 Tell us what you need - grains, spices, pulses, oils, dry fruits, or something
                 custom - and we handle sourcing, shipping, and customs through to delivery.
               </p>
-              <Link to="/contact" className="btn btn-gold">
+              <Link to="/contact" className="btn btn-red">
                 Request a Quote <ArrowRight width={18} height={18} />
               </Link>
             </div>
